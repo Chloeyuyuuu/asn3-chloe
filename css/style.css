@@ -1,0 +1,855 @@
+/* 首页样式 */
+
+/* 第一阶段 */
+.box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Film synopsis */
+.filmSynopsis {
+}
+
+.filmSynopsis .wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.filmSynopsis .wrapper .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.filmSynopsis .wrapper .left .tp {
+  width: 300px;
+  height: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.filmSynopsis .wrapper .left .tp img {
+  width: 100%;
+  height: 100%;
+}
+
+.filmSynopsis .wrapper .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.filmSynopsis .wrapper .right .title {
+  width: 90%;
+  height: 80%;
+}
+
+.filmSynopsis .wrapper .right .title h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.filmSynopsis .wrapper .right .title h3 i {
+  color: #61b752;
+}
+
+.filmSynopsis .wrapper .right .title p {
+  line-height: 35px;
+  font-size: 15px;
+}
+
+/* Voice actor */
+.voice_Actor {
+}
+
+.voice_Actor .wrapper {
+  height: 100%;
+}
+
+.voice_Actor .wrapper .hd {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 100px;
+  padding: 0 30px;
+}
+
+.voice_Actor .wrapper h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.voice_Actor .wrapper h3 i {
+  color: #61b752;
+}
+
+.voice_Actor .wrapper .bd {
+  height: 400px;
+}
+
+.voice_Actor .wrapper .bd ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.voice_Actor .wrapper .bd ul li {
+  width: 200px;
+  height: 250px;
+  background-color: #ffffff;
+  border: 1px solid #61b752;
+  border-radius: 10px;
+}
+
+.voice_Actor .wrapper .bd ul li:nth-child(1n) {
+  transform: translateY(-50px);
+}
+
+.voice_Actor .wrapper .bd ul li:nth-child(2n) {
+  transform: translateY(50px);
+}
+
+.voice_Actor .wrapper .bd ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.voice_Actor .wrapper .bd ul li a .tp {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.voice_Actor .wrapper .bd ul li a .tp img {
+  width: 100%;
+  height: 100%;
+}
+
+.voice_Actor .wrapper .bd ul li a h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Film stills */
+.film_Stills {
+}
+
+.film_Stills .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.film_Stills .wrapper .hd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.film_Stills .wrapper .hd h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.film_Stills .wrapper .hd h3 i {
+  color: #61b752;
+}
+
+.film_Stills .wrapper .bd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.film_Stills .wrapper .bd .sa {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.film_Stills .wrapper .bd .sa .xzHz {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.film_Stills .wrapper .bd .sa .xzHz ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.film_Stills .wrapper .bd .sa .xzHz ul li {
+  display: flex;
+  width: 290px;
+  height: 100%;
+  margin-right: 45px;
+  transform: scale(0.8);
+}
+
+.film_Stills .wrapper .bd .sa .xzHz ul li:last-child {
+  margin-right: 0;
+}
+
+.film_Stills .wrapper .bd .sa .xzHz ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+.film_Stills .wrapper .bd .sa .xzHz ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+.film_Stills .wrapper .bd .sa .xzHz ul li:nth-child(2) {
+  transform: scale(1);
+}
+
+.film_Stills .wrapper .bd .sa .prex,
+.film_Stills .wrapper .bd .sa .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.film_Stills .wrapper .bd .sa .prex img,
+.film_Stills .wrapper .bd .sa .next img {
+  width: 100%;
+  height: 100%;
+}
+
+.film_Stills .wrapper .bd .sa .prex {
+  left: 50px;
+}
+
+.film_Stills .wrapper .bd .sa .next {
+  right: 50px;
+}
+
+.film_Stills .wrapper .bd .xa {
+  width: 80%;
+}
+.film_Stills .wrapper .bd .xa p {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  text-align: center;
+  line-height: 35px;
+  font-size: 15px;
+}
+
+/* 第二阶段 */
+/* Movie ratings */
+.movieRatings {
+}
+
+.movieRatings .wrapper {
+  height: 100%;
+  padding: 50px;
+}
+
+.movieRatings .wrapper .hd {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.movieRatings .wrapper .hd h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.movieRatings .wrapper .hd h3 i {
+  color: #61b752;
+}
+
+.movieRatings .wrapper .bd {
+}
+
+.movieRatings .wrapper .bd .lisk {
+  width: 100%;
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item {
+  background-color: #fff;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.movieRatings .wrapper .bd .lisk .item:last-child {
+  margin-bottom: 0;
+}
+
+.movieRatings .wrapper .bd .lisk .item:nth-child(1) {
+  border-radius: 50px 50px 50px 0;
+}
+
+.movieRatings .wrapper .bd .lisk .item:nth-child(2) {
+  border-radius: 50px 0 50px 50px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .left .tp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .left .tp img {
+  width: 100%;
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .left h5 {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .left .xingXing {
+  width: 200px;
+  height: 25px;
+  text-align: center;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .left .xingXing img {
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right {
+  flex: 1;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li:last-child {
+  margin-bottom: 0;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a .le {
+  display: flex;
+  align-items: center;
+  width: 230px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a .le span {
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a .le span:last-child {
+  margin-right: 0;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a .le span img {
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a .ri {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a .ri .xt {
+  width: 70%;
+  height: 15px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.movieRatings .wrapper .bd .lisk .item .zy .right ul li a .ri .xt i {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #92da86;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px 30px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .hd {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .hd .le {
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .hd .le h6 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .hd .ri {
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .hd .ri span {
+  font-size: 16px;
+  color: #909090;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd {
+  flex: 1;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul {
+  width: 100%;
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li {
+  display: flex;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .le {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .le .tp {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .le .tp img {
+  width: 100%;
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .ri {
+  flex: 1;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .ri .tp {
+  height: 25px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .ri .tp img {
+  height: 100%;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .ri .title {
+  height: 70px;
+  padding-top: 10px;
+}
+
+.movieRatings .wrapper .bd .lisk .item .sx .bd ul li .ri .title p {
+  width: 100%;
+  height: 100%;
+  line-height: 24px;
+  font-size: 15px;
+  color: #000;
+}
+
+/* 第三阶段 */
+/* Classic excerpt */
+.classic_Excerpt {
+  padding: 50px 0;
+}
+
+.classic_Excerpt .hd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.classic_Excerpt .hd h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.classic_Excerpt .hd h3 i {
+  color: #61b752;
+}
+
+.classic_Excerpt .bd {
+  height: 100%;
+}
+
+.classic_Excerpt .bd ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.classic_Excerpt .bd ul li {
+  width: 600px;
+  height: 100%;
+  margin-right: 80px;
+}
+
+.classic_Excerpt .bd ul li:last-child {
+  margin-right: 0;
+}
+
+.classic_Excerpt .bd ul li .tp {
+  position: relative;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.classic_Excerpt .bd ul li .tp img {
+  width: 100%;
+  height: 100%;
+}
+
+.classic_Excerpt .bd ul li .tp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/31.png) no-repeat center;
+  background-size: 80px;
+}
+
+.classic_Excerpt .bd ul li .title {
+  padding: 30px 0 0;
+}
+
+.classic_Excerpt .bd ul li .title p {
+  line-height: 28px;
+  font-size: 14px;
+  color: #000;
+}
+
+/* Author Introduction */
+.author_Introduction {
+  padding: 50px 0;
+}
+
+.author_Introduction .wrapper {
+  height: 100%;
+}
+
+.author_Introduction .wrapper .hd {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.author_Introduction .wrapper .hd h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.author_Introduction .wrapper .hd h3 i {
+  color: #61b752;
+}
+
+.author_Introduction .wrapper .bd {
+  display: flex;
+  height: 200px;
+}
+
+.author_Introduction .wrapper .bd .le {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 100%;
+}
+
+.author_Introduction .wrapper .bd .le .tp {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author_Introduction .wrapper .bd .le .tp img {
+  width: 100%;
+  height: 100%;
+}
+
+.author_Introduction .wrapper .bd .ri {
+  flex: 1;
+}
+
+.author_Introduction .wrapper .bd .ri .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.author_Introduction .wrapper .bd .ri .title p {
+  line-height: 24px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* 第四阶段 */
+/* Role Introduction */
+.role_Introduction {
+  padding: 50px 0;
+}
+
+.role_Introduction .wrapper {
+  height: 100%;
+}
+
+.role_Introduction .wrapper .hd {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 100px;
+}
+
+.role_Introduction .wrapper .hd h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.role_Introduction .wrapper .hd h3 i {
+  color: #61b752;
+}
+
+.role_Introduction .wrapper .bd {
+  height: 400px;
+}
+
+.role_Introduction .wrapper .bd .lisk {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.role_Introduction .wrapper .bd .lisk li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 180px;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.role_Introduction .wrapper .bd .lisk li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%) rotate(24deg);
+  width: 120px;
+  height: 2px;
+  background-color: #61b752;
+  z-index: 2;
+}
+
+.role_Introduction .wrapper .bd .lisk li:nth-child(2n):before {
+  transform: rotate(-24deg);
+}
+
+.role_Introduction .wrapper .bd .lisk li:last-child:before {
+  display: none;
+}
+
+.role_Introduction .wrapper .bd .lisk li .tp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.role_Introduction .wrapper .bd .lisk li .tp img {
+  width: 100%;
+  height: 100%;
+}
+
+.role_Introduction .wrapper .bd .lisk li h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* 第五段 */
+/* Classic Lines */
+.classic_Lines {
+  padding: 50px 0;
+}
+
+.classic_Lines .hd {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.classic_Lines .hd h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+.classic_Lines .hd h3 i {
+  color: #61b752;
+}
+
+.classic_Lines .bd {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  height: 550px;
+}
+
+.classic_Lines .bd .lisk {
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #e6f7e4;
+  border-radius: 30px 0 0 30px;
+  padding: 40px 0;
+}
+
+.classic_Lines .bd .lisk .title {
+  display: flex;
+  justify-content: left;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.classic_Lines .bd .lisk .title .left {
+  height: 50px;
+}
+
+.classic_Lines .bd .lisk .title .left span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #61b752;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+
+.classic_Lines .bd .lisk .title p {
+  flex: 1;
+  margin-left: 30px;
+  padding-right: 50px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #000;
+}
+
+.classic_Lines .bd .lisk ul {
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 160px;
+}
+
+.classic_Lines .bd .lisk ul li {
+  width: 250px;
+  border-radius: 20px;
+  margin-right: 60px;
+  overflow: hidden;
+}
+
+.classic_Lines .bd .lisk ul li .tp {
+  width: 100%;
+  height: 100%;
+}
+
+.classic_Lines .bd .lisk ul li .tp img {
+  width: 100%;
+  height: 100%;
+}

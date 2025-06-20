@@ -1,0 +1,23 @@
+/* 初始样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+i {
+  text-decoration: none;
+  font-style: normal;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  resize: none;
+}
